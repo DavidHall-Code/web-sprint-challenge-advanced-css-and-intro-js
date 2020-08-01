@@ -239,9 +239,21 @@ function getArtistByIndex(array, index) {
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/* Code here */){
+function get20s(artistsArray){
 
-  /* Code here */
+  let newArray = [];
+
+  for( let i = 0; i < artistsArray.length; i++){
+
+  if((artistsArray[i].years.charAt(1) === "9") && (artistsArray[i].years.charAt(8) === "9")){
+  newArray.push(artistsArray[i].name);
+} 
+  
+  }
+  return newArray;
+  }
+
+console.log(get20s(artists));
 
 }
 
@@ -256,9 +268,13 @@ function get20s(/* Code here */){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
-  }
+
+function removeArtist(artistArray, index) {
+    
+  artistArray.splice(index, 1);
+
+  console.log(artistArray.length);
+} 
   
  
 
@@ -275,11 +291,14 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
+function addArtist(addArtistsArray){
 
-    /* Code here */
+  addArtistsArray.push({id: 20, name: "David M. Hall", years: "1981-7/31/2020", genre: "Web Design", nationality: "Scottish", bio: "I currently reside in Waterville, Maine with my wife and 3 children. I have a 3 year old son, soon to be 4 and 2 year old soon to be 3 identical twin girls."})
+    return addArtistsArray;
 
   }
+
+  console.log(addArtist(artists));
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -289,9 +308,20 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(artistArray){
 
-  /* Code here */
+  let newArray = [];
+ 
+  for(let i = 0; i < artistArray.length; i++){
+   
+    if(artistArray[i].paintings > 100){
+    
+      newArray.push(artistArray[i].name);
+   }
+ }
+  return newArray;  
+ } 
+console.log(lotsOfArt(artists));
 
 }
 
