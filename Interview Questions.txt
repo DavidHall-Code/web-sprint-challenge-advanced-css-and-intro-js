@@ -1,0 +1,18 @@
+How would you describe acessibility on the web to someone new to programming?
+A: Assability allows a programmer to take into consideration for builing a web site for all people that may have differant needs.
+
+
+Talk about 3 different things you can do to ensure your website is accessible.
+A1: By using the proper metadata tags you are able to allow the content of the page to be easly used by readers such as text to speech.
+A2: By making smart color choices you would make it possiable for useres that are visually impared easier to read such as for a color blind person.
+A3: By using Accessable text formatting, you can make more pleasurable for users by making long forms of content eaiser to navigate by crating sub-sections.
+
+
+How would you explain the concept of a variable to someone new to programming?
+A: It allows flexabilty in programming. If a programmer did not use variables he/ she would have to enter all the data directly. 
+The varaible is used to represent data.
+
+
+
+What is the purpose of using functions in code? 
+A: Functions allow you to beable to reuse and call data as much as you need to.
